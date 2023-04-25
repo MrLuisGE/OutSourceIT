@@ -1,0 +1,204 @@
+*{
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	background-color: #020606;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23020606' cx='50' cy='0' r='50'/%3E%3Cg fill='%23030a0b' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23030e0f' cx='50' cy='100' r='50'/%3E%3Cg fill='%23041113' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23051416' cx='50' cy='200' r='50'/%3E%3Cg fill='%23051719' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2306191c' cx='50' cy='300' r='50'/%3E%3Cg fill='%23071b20' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23061d23' cx='50' cy='400' r='50'/%3E%3Cg fill='%23051f27' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%2305212b' cx='50' cy='500' r='50'/%3E%3Cg fill='%2304232f' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23042533' cx='50' cy='600' r='50'/%3E%3Cg fill='%23032737' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2304293b' cx='50' cy='700' r='50'/%3E%3Cg fill='%23052b3f' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23072d43' cx='50' cy='800' r='50'/%3E%3Cg fill='%230a2f47' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%230e314b' cx='50' cy='900' r='50'/%3E%3Cg fill='%2312324f' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23173453' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: contain;
+} 
+.container{
+	display: flex;
+	justify-content: center;
+	z-index: 2;
+}
+.card{
+	background: rgba(255, 255, 255, 0.36);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.2px);
+	-webkit-backdrop-filter: blur(6.2px);
+	border: 1px solid rgba(255, 255, 255, 0.58);
+	width: 28rem;
+	min-height: 34rem;
+	height: 100%;
+	margin: 15px;
+	border-radius: 15px;
+	transition: transform 250ms, opacity 400ms;
+}
+.card h2{
+	display: flex;
+	justify-content: center;
+	margin: 25px;
+	font-size: 1.8rem;
+	opacity: 1;
+}
+.card p{
+	display: flex;
+	justify-content: center;
+	margin: 25px 25px;
+	opacity: 1;
+	font-weight: 600;
+	text-align: justify;
+}
+.card:hover{
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+	font-weight: 1000;
+	transition: 0.5s;
+	transform: scale(1.1) translateY(-10px);
+	opacity: 1;
+}
+.card-img{
+	display: block;
+	margin: 0 auto;
+	width: 5.5rem;
+	margin-top: 10%;
+}
+.navbar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+}
+.logo{
+	width: 250px;
+	cursor: pointer;
+	margin: 20px 30px;
+}
+.menu-icon{
+	width: 30px;
+	cursor: pointer;
+	display: none;
+}
+.img{
+    width: 2.5rem;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.text {
+	display: flex;
+	height: 100%;
+	align-items: center;
+  }
+  canvas {
+	display: block;
+	vertical-align: bottom;
+  } 
+  #particles-js {
+	position: fixed;
+	pointer-events: none;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	width: 200%;
+	height: 200vh;
+	z-index: -1;
+  }
+  .bg {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+	right: -50%;
+	bottom: -50%;
+	width: 200%;
+	height: 200vh;
+	background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+	background-repeat: repeat;
+	animation: bg-animation .2s infinite;
+	opacity: 0.6;
+	visibility: visible;
+	z-index: -1;
+  }
+  .button{
+	display: flex;
+	justify-content: center;
+	margin-top: 2%;
+	transition: transform 250ms, opacity 400ms;
+  }
+  .button a{
+	text-decoration: none;
+	color: white;
+	background-color:  rgba(0, 121, 211, 0.5);
+	padding: 10px 20px;
+	font-size: 2.1rem;
+	font-weight: 600;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	transition: transform 250ms, opacity 400ms;
+	text-transform: uppercase;
+  }
+  .button a:hover{
+	transition: 0.5s;
+	transform:translateY(-10px);
+	background-color: rgb(0, 120, 212);
+  }
+  
+  @keyframes bg-animation {
+	  0% { transform: translate(0,0) }
+	  10% { transform: translate(-5%,-5%) }
+	  20% { transform: translate(-10%,5%) }
+	  30% { transform: translate(5%,-10%) }
+	  40% { transform: translate(-5%,15%) }
+	  50% { transform: translate(-10%,5%) }
+	  60% { transform: translate(15%,0) }
+	  70% { transform: translate(0,10%) }
+	  80% { transform: translate(-15%,0) }
+	  90% { transform: translate(10%,5%) }
+	  100% { transform: translate(5%,0) }
+  }
+  @media only screen and (max-width:600px){
+	.container{
+	    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	}
+	.card{
+		height: 100%;
+		width: 90%;
+		height: auto;
+		margin: 10px;
+	}
+	.card p{
+		font-size: 1em;
+	}
+	.card h2{
+		font-size: 1.6em;
+	}
+	.card-img{
+		width: 4.5rem;
+		margin-top: 10%;
+	}
+	.button{
+		margin: 5%;
+	  }
+	  .logo{
+		width: 200px;
+		cursor: pointer;
+		margin: 20px 30px;
+	}
+	.img{
+		width: 2rem;
+	}
+  }
+
+  
